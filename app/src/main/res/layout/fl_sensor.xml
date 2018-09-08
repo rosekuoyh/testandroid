@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F2F2F"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="154dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:text="@string/air_quality"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="319dp">
+
+
+        <LinearLayout>
+
+            <ImageButton
+                android:layout_width="73dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_chevron_left_black_24dp" />
+
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:theme="@style/ProgressTheme" />
+
+
+            <ImageButton
+                android:layout_width="73dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_chevron_right_black_24dp" />
+        </LinearLayout>
+
+
+        <TableRow>
+
+            <!--<TextView-->
+            <!--android:layout_width="81dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:textSize="25sp" />-->
+
+            <Switch
+                android:id="@+id/switch1"
+
+                android:layout_width="358dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:showText="true"
+                android:switchTextAppearance="@style/SwitchTheme"
+                android:text="@string/purifier_power"
+                android:textColor="#FFFFFF"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:textSize="18sp"
+                android:thumb="@drawable/switch_custom_thumb_selector"
+                android:track="@drawable/switch_custom_track_selector"
+                tools:targetApi="lollipop" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="25sp" />-->
+        </TableRow>
+
+        <TableRow>
+
+            <!--<TextView-->
+                <!--android:layout_width="78dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:textSize="25sp" />-->
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="262dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:showText="true"
+                android:switchTextAppearance="@style/SwitchTheme"
+                android:text="@string/device_power"
+                android:textColor="#FFFFFF"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:textSize="18sp"
+                android:thumb="@drawable/switch_custom_thumb_selector"
+                android:track="@drawable/switch_custom_track_selector"
+                tools:targetApi="lollipop" />
+
+            <!--<TextView-->
+            <!--android:layout_width="67dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="25sp" />-->
+        </TableRow>
+
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="196dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="@string/co2"
+                android:textColor="#ffffff" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="193dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="@string/gas"
+                android:textColor="#ffffff" />
+        </TableRow>
+        <TableRow>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="121dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_40"
+                android:textColor="#d4da00"
+                android:textSize="25sp" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="121dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_25"
+                android:textColor="#d4da00"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="@string/pm2_5"
+                android:textColor="#ffffff" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="@string/pm10"
+                android:textColor="#ffffff" />
+        </TableRow>
+        <TableRow>
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_40"
+                android:textSize="25sp"
+                android:textColor="#d4da00"/>
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_25"
+                android:textSize="25sp"
+                android:textColor="#d4da00"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

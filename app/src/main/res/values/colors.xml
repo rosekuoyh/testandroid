@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#d4da00</color>
+    <color name="sa_green">#14a804</color>
+    <color name="stacked_green">#118504</color>
+    <color name="accent_green">#97e08f</color>
+    <color name="accent_white">#ffffff</color>
+    <color name="accent_grey">#d62f2f2f</color>
+    <color name="accent_whitegrey">#eadedede</color>
+    <color name="accent_rice">#FFFBDE</color>
+</resources>

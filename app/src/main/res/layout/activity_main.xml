@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2F2F2F">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/logo" />
+    <!--<TextView-->
+        <!--android:id="@+id/textWelcome"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#FFFBDE"-->
+        <!--android:layout_marginLeft="135dp"-->
+        <!--android:text="Tap to Enter"/>-->
+
+    <!--android:background="#FFFBDE"-->
+    <Button
+        android:id="@+id/btnEnter"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_button_enter"
+        android:text="@string/enter"
+
+        android:textColor="#FFFBDE"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_button_enter"
+        android:text="@string/test"
+
+        android:textColor="#FFFBDE"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
