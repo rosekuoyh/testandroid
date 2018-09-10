@@ -5,13 +5,21 @@ import android.app.Activity;
 import android.view.View;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.TextView;
 //import android.widget.ImageView;
 //import android.widget.TextView;
 
 public class SensorFragment extends Fragment
 {
+    private double arr[][];
+    private TextView gas, co2, pm25, pm10;
+    private double totalgas = 0, totalco2 = 0, totalpm25 = 0, totalpm10 = 0;
+
     //顯示文字內容
 //    private String text = "";
+    public SensorFragment(){
+
+    }
 
     @Override
     public void onAttach(Activity activity)
@@ -22,12 +30,27 @@ public class SensorFragment extends Fragment
 //        Tab mTab = (Tab) activity;
 //        text = mTab.getSensorText();
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        //導入Tab分頁的Fragment Layout
-        return inflater.inflate(R.layout.fl_sensor, container, false);
+        View rootView = inflater.inflate(R.layout.fl_sensor, container, false);
+        double newarr[][] = (double[][]) this.getArguments().getSerializable("arr");
+        calculate(newarr);
+        gas = (TextView) rootView.findViewById(R.id.txt_gas);
+        co2 = (TextView) rootView.findViewById(R.id.txt_co2);
+        pm25 = (TextView) rootView.findViewById(R.id.txt_pm25);
+        pm10 = (TextView) rootView.findViewById(R.id.txt_pm10);
+
+        gas.setText(String.valueOf(arr[1][1]));
+        return rootView;
+    }
+
+    private double[][] calculate(double newarr[][]) {
+        for(int i = 0; i < newarr[1].length;i++) {
+            totalgas = totalgas + newarr[1][i];
+        }
+        arr[1][1] = totalgas / newarr[1].length;
+        return arr;
     }
 
     @Override
